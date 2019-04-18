@@ -2,34 +2,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
-<meta name="author" content="CLVR" />
-<meta name="description" content="Company website" />
-<meta name="keywords" content="Cloud Native, Software development" />
-<title>CLVR.::.</title>
+<meta name="author" content="CLVR Cloud Limited" />
+<meta name="description" content="We provide solutions focusing on Cloud Native Technologies" />
+<meta name="keywords" content="docker, kubernetes, hashicorp, elastic search, rancher, redhat, openshift, prometheus, grafana, hashicorp vault, hashicorp packer, terraform, spark, kafka" />
+<title>CLVR ☁ </title>
 <link rel="stylesheet" href="css/swiper.css">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet"> 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138352489-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138352489-1');
+</script>
+<!-- Google Analytics -->
 </head>
 <body>
 	<header class="header">
 		<div class="header__content header__content--fluid-width">
-			<div class="header__logo-title">CLVR</div>
+			<div class="header__logo-title">Welcome to <span>CLVR</span> ☁</div>
 			<nav class="header__menu">                                                                   
 				<ul>
 					<li><a class="selected header-link" href="#intro">HOME</a></li>
-					<li class="menu-item-has-children"><a href="#features" class="header-link">FEATURES</a>
+					<li class="menu-item-has-children"><a href="#features" class="header-link">WHAT DO WE DO?</a>
 						<ul class="sub-menu">
-							<li><a href="#hiw" class="header-link">HOW IT WORKS</a></li>
-							<li><a href="#clients" class="header-link">OUR CLIENTS</a></li>
-							<li><a href="#faq" class="header-link">FAQ</a></li>
-							<li><a href="#testimonials" class="header-link">TESTIMONIALS</a></li>
-							<li><a href="#support" class="header-link">SUPPORT</a></li>
+							<!-- <li><a href="#hiw" class="header-link">HOW IT WORKS</a></li> -->
+							<!-- <li><a href="#clients" class="header-link">OUR CLIENTS</a></li> -->
+							<!-- <li><a href="#faq" class="header-link">FAQ</a></li> -->
+							<!-- <li><a href="#testimonials" class="header-link">TESTIMONIALS</a></li> -->
+							<li><a href="#values" class="header-link">OUR VALUES</a></li>
 						</ul>
 					</li>
-					<li><a href="#pricing" class="header-link">PRICING</a></li>
-					<li><a href="#support" class="header-link">CONTACT</a></li>
-					<!-- <li class="header__btn header__btn--login modal-toggle" data-openpopup="signuplogin" data-popup="login"><a href="#">LOGIN</a></li> -->
-					<li class="header__btn header__btn--signup modal-toggle" data-openpopup="signuplogin" data-popup="signup"><a href="#">CONTACT US</a></li>			
+					<li><a href="#faq" class="header-link">FAQ</a></li>
+					<li><a href="#cta" class="header-link">JOIN THE TEAM</a></li>
+					<!--<li class="header__btn header__btn--login modal-toggle" data-openpopup="signuplogin" data-popup="login"><a href="#">LOGIN</a></li>!-->
+					<li class="header__btn header__btn--signup"><a href="mailto:contact@clvr.cloud">Contact us</a></li>			
 				</ul>
 			</nav> 
 		</div>		
@@ -40,16 +50,17 @@
 			<div class="section__content section__content--fluid-width section__content--intro">
 				<div class="intro">
 				    <div class="intro__content">
-					<div class="intro__title"><span>Implementing </span>Cloud Native</div>
-					<div class="intro__subtitle">
-						"Cloud Native means bringing cloud-centric best practices to software and IT generally, 
-						whether that be in the cloud oron premises." 
+					<div class="intro__title">
+						<strong>We do</strong> 
+						<div class="intro__title__words-animation">
+							<span class="intro__title--word-animated word">SRE</span>
+							<span class="intro__title--word-animated word">DevOps</span>
+							<span class="intro__title--word-animated word">Cloud</span>
+							<span class="intro__title--word-animated word">CI/CD</span>
+						</div>
 					</div>
-					<div class="intro__description">Jason Bloomberg - <span>
-						<a href="https://www.forbes.com/sites/jasonbloomberg/2019/01/27/think-youre-cloud-native-only-if-youre-doing-this/#2d7c2af434ff">
-						Forbes
-						</a></span>
-					</div>
+					<div class="intro__subtitle">We implement cloud native technologies that allow you to innovate at speed and scale abstracting from platforms and systems, supported by decades of experience on <b>Cloud Computing</b>, <b>DevOps</b> and <b>Site Reliability Engineering.</b></div>
+					<div class="intro__description">We are <span>motivated</span> by <span>innovation</span> and drived by <span>passion</span></div>
 					<div class="intro__buttons intro__buttons--left">
 						<a href="index.html" class="btn btn--blue-bg btn--play modal-toggle" data-openpopup="animation">WATCH DEMO</a>
 						<a href="index.html" class="btn btn--red-bg">START NOW</a>
@@ -58,237 +69,266 @@
 				</div>
 			</div>
 			<div class="intro-animation">
-				<img src="images/intro-animation.png" alt="" title=""/>
+				<img src="images/sre-dashboard.jpeg" alt="" title=""/>
 			</div>
+			<svg class="svg-intro-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M80,0 L50,55 Q45,65 50,82 L55,100 0,100 0,0 Z" fill="#ffffff"/>
+			</svg>
 	</section>
-	
-	<!-- Section -->
-	<section class="section" id="clients">
-			<div class="section__content section__content--fluid-width section__content--clients">				
-				<div class="grid grid--5col">
-				
-					<div class="grid__item">
-						<div class="grid__client-logo"><a href="#"><img src="images/clients/kubernetes-horizontal-color.png" alt="" title=""/></a></div>
-					</div>
-					<div class="grid__item">
-						<div class="grid__client-logo"><a href="#"><img src="images/clients/docker.png" alt="" title=""/></a></div>
-					</div>
-					<div class="grid__item">
-						<div class="grid__client-logo"><a href="#"><img src="images/clients/vmware.png" alt="" title=""/></a></div>
-					</div>
-					<div class="grid__item">
-						<div class="grid__client-logo"><a href="#"><img src="images/clients/gcloud.png" alt="" title=""/></a></div>
-					</div>
-					<div class="grid__item">
-						<div class="grid__client-logo"><a href="#"><img src="images/clients/clients-logo5.png" alt="" title=""/></a></div>
-					</div>
-				</div>
 
-			</div>
-
-	</section>
-	
 	<!-- Section -- features -->
 	<section class="section section--features" id="features">
-		<div class="section__content section__content--fluid-width section__content--padding">
-			<h2 class="section__title section__title--centered">Features designed for you</h2>
-			<div class="section__description section__description--centered">
-			We believe we have created the most efficient SaaS landing page for your users. 
-			Landing page with features that will convince you to use it for your SaaS business.
-			</div>
-			<div class="grid grid--4col grid--features">
-				<div class="grid__item">
-					<div class="grid__icon"><img src="images/icons/icons-64-blue/paper-plane-64.png" alt="" title=""/></div>
-					<h3 class="grid__title">Speed</h3>
-					<p class="grid__text">
-						We help companies to disrupt the business by deploying sofware quickly, 
-						accelerating innovation and reducing IT costs.
-						Cloud Native allows us to move ideas from development to production faster 
-						in a secure and resilient environment.
-					</p>
-				</div>
-				
-				<div class="grid__item">
-					<div class="grid__icon"><img src="images/icons/icons-64-blue/wallet-64.png" alt="" title=""/></div>
-					<h3 class="grid__title"><span>Cost </span>Savings</h3>
-					<p class="grid__text">
-						Reduce costs by using your datacenter resources wisely.
-						Implement OpenSource systems and tools.
-						Scale up and down without extra-costs.
-					</p>
-				</div>
-				
-				<div class="grid__item">
-					<div class="grid__icon"><img src="images/icons/icons-64-blue/security-64.png" alt="" title=""/></div>
-					<h3 class="grid__title">Security <span>and </span>Compliance</h3>
-					<p class="grid__text">
-						Implement DevSecOps to secure and protect your applications and environments.
-						Run only your own digitaly signed and trusted software.
-						Encrypt all communications across your applications API's.
-					</p>
-				</div>
-			</div>
+
+			<div class="section__content section__content--fluid-width section__content--features">
+			        <h2 class="section__title section__title--centered section__title--features">What do we do?</h2>
+				<div class="section__description section__description--centered section__description--features">
 			
-			<div class="grid grid--4col grid--features grid--noborder">
-				<div class="grid__item">
-					<div class="grid__icon"><img src="images/icons/icons-64-blue/desktop-code-64.png" alt="" title=""/></div>
-					<h3 class="grid__title">Innovate</h3>
-					<p class="grid__text">
-						From Containers implemention to Data Streaming, Real Time Analytics, Machine Learning, 
-						Serverless and Virtual Reality. Cloud Native is the future of the cloud.
-					</p>
+					With teams distributed  around <i> New Zealand and Argentina</i>, we bring our expertise on building, running and operating highly available systems to small and medium enterprises enabling <b>Digital Transformation.</b> <br/>
+					Our expertise is based on years working for IT, aerospacial, banking and insurance companies. <br/> We focus on: <br / >
+					
 				</div>
+				<div class="grid grid--3col grid--features">
 				
-				<div class="grid__item">
-					<div class="grid__icon"><img src="images/icons/icons-64-blue/raport-64.png" alt="" title=""/></div>
-					<h3 class="grid__title">Freedom <span>of Choice</span></h3>
-					<p class="grid__text">
-						Deploy applications on any environment: Cloud or on premises. 
-						Cloud Native avoids vendor lock in and exploits the benefits of Cloud Computing
-					</p>
-				</div>
-				
-				<div class="grid__item">
-					<div class="grid__icon"><img src="images/icons/icons-64-blue/browser-64.png" alt="" title=""/></div>
-					<h3 class="grid__title">Resilience</h3>
-					<p class="grid__text">
-						Run your applications on a highly available, fault tolerant platform, 
-						bringing resilience and stability to your customers.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>	
-	
-	<!-- Section -- How it works -->
-	<!-- <section class="section section--hiw" id="hiw">
-		<div class="section__content section__content--fix-width section__content--padding">
-			<h2 class="section__title section__title--centered">Easy to use API</h2>
-			<div class="section__description section__description--centered">
-				Guide to setup and configuration. You can present below a guide and a description of 
-				how your system configuration works and add some animated screens.
-			</div>
-			<div class="hiw">
-				<div class="hiw-titles">
-					<div class="hiw-titles__wrapper swiper-wrapper">
-						<div class="hiw-titles__slide swiper-slide">
-						<span>Initializing JS</span>
-						</div>
-						<div class="hiw-titles__slide swiper-slide">
-						<span>Configuration CSS</span>
-						</div>
-						<div class="hiw-titles__slide swiper-slide">
-						<span>Security Levels API</span>
-						</div>
-						<div class="hiw-titles__slide swiper-slide">
-						<span>Add Instances</span>
-						</div>
-						<div class="hiw-titles__slide swiper-slide">
-						<span>General API Settings</span>
-						</div>
-					</div>	
-				</div>								   
+					<div class="grid__item">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/responsive-64.png" alt="" title=""/></div>
+						<h3 class="grid__title"><span>Site Reliability</span> Engineering</h3>
+						<p class="grid__text">
+							Run your applications on a highly available, fault tolerant platform, bringing resilience and stability to your customers while shipping new features and applications.
+						<br / >
+						This involves <i>Infrastructure as Code</i> and <i>Operation Support</i>.
 
-				<div class="hiw-content">
-					<div class="hiw-content__wrapper swiper-wrapper">
-						<div class="hiw-content__slide swiper-slide">
-							<pre>
-								<strong>$('.modal-toggle').on('click', function(e) {</strong>
-									e.preventDefault();
-									var modalopen = $(this).data("openpopup");
-									$('.modal--'+modalopen).toggleClass('modal--visible');
-									var modaltype = $(this).data("popup");
-									$('.modal__content--'+modaltype).toggleClass('modal__content--visible');
-										$('.modal__switch').on('click', function(e) {
-											$('.modal__content').removeClass('modal__content--visible');
-											var modaltypeb = $(this).data("popup");
-											$('.modal__content--'+modaltypeb).toggleClass('modal__content--visible');
-										});
-								});
-							</pre>										
-						</div>
-						<div class="hiw-content__slide swiper-slide">
-							<pre>
-								<strong>.hiw-titles__slide{</strong>
-									width: calc(100% / 5);
-									cursor:pointer;
-									padding:30px 0; 
-									margin:0 0 -2px 0;
-									text-align:center;
-									opacity:.4;
-									-webkit-transition: all 1s;
-									-moz-transition: all 1s;
-									transition: all 1s;
-								}
-							</pre>		
-						</div>				
-						<div class="hiw-content__slide swiper-slide">
-							<pre>
-								<strong>$(".input__field").focus(function(){</strong>
-									$(this).parent().addClass('input--filled');
-								});
-
-								<strong>$('.input__field').blur(function()</strong>
-								{
-									if( !$(this).val() ) {
-											$(this).parent().removeClass('input--filled');
-									}
-								});
-							</pre>			
-						</div>
-						<div class="hiw-content__slide swiper-slide">
-							<pre>
-								<strong>$('.modal-toggle').on('click', function(e) {</strong>
-									e.preventDefault();
-									var modalopen = $(this).data("openpopup");
-									$('.modal--'+modalopen).toggleClass('modal--visible');
-									var modaltype = $(this).data("popup");
-									$('.modal__content--'+modaltype).toggleClass('modal__content--visible');
-										$('.modal__switch').on('click', function(e) {
-											$('.modal__content').removeClass('modal__content--visible');
-											var modaltypeb = $(this).data("popup");
-											$('.modal__content--'+modaltypeb).toggleClass('modal__content--visible');
-										});
-								});
-							</pre>				
-						</div>
-						<div class="hiw-content__slide swiper-slide">
-							<pre>
-								<strong>.hiw-titles__slide{</strong>
-										width: calc(100% / 5);
-										cursor:pointer;
-										padding:30px 0; 
-										margin:0 0 -2px 0;
-										text-align:center;
-										opacity:.4;
-										-webkit-transition: all 1s;
-									-moz-transition: all 1s;
-									transition: all 1s;
-								}
-							</pre>			
-						</div>
+						</p>
+					</div>
+					
+					<div class="grid__item">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/desktop-chart-64.png" alt="" title=""/></div>
+						<h3 class="grid__title"><span>Agile</span> & DevOps</h3>
+						<p class="grid__text">Disrupt the business by deploying sofware quickly, accelerating innovation and reducing IT costs. 
+							<br/>	DevSecOps allows us to move ideas from development to production fast, securing and protecting your applications and environments via network and security polices.
+						</p>
+					</div>
+					
+					<div class="grid__item">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/upload-64.png" alt="" title=""/></div>
+						<h3 class="grid__title"><span>Multi Cloud </span>Strategies</h3>
+						<p class="grid__text"> By implementing a Cloud Native strategy, you ensure that the effort that you put into building, deploying and operating your applications is portable across cloud providers and platforms. 
+							<br/>This stategy brings along <b>Freedom of Choice</b>,avoids <b>vendor lock-in</b> and exploits the benefits of <b>cloud computing</b>, such as <b>elasticity</b></p>
 					</div>
 				</div>
+				<div class="clear"></div>
+				<div class="grid grid--3col grid--features">
+				
+					<div class="grid__item">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/chat-bubbles-64.png" alt="" title=""/></div>
+						<h3 class="grid__title">Coaching & <span>Training</span></h3>
+						<p class="grid__text">We actively giving workshops and training regarding SRE, Devops, cloud, docker and kubernetes.
+						</p>
+					</div>
 					
-				<div class="hiw-buttons">
-					<button class="btn btn--blue-bg">GET THE CODE</button>
-					<button class="btn btn--red-bg">RUN EXAMPLE</button>
+					<div class="grid__item">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/meter-64.png" alt="" title=""/></div>
+						<h3 class="grid__title">Operation<span> Support</span></h3>
+						<p class="grid__text">We provide operations support and maintance of your environments and applications. 
+								Our stack is based on open-source technologies, such as Prometheus and Alert manager.</p>
+					</div>
+					
+					<div class="grid__item">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/browser-64.png" alt="" title=""/></div>
+						<h3 class="grid__title">Innovation <span>Labs</span></h3>
+						<p class="grid__text">We are continously improving ourselves and learning new technologies and tools via our innovation labs.
+						This is our key for <i>continuous improvement</i>.
+						</p>
+					</div>
 				</div>
-	
+				<div class="clear"></div>
 			</div>
+			<svg class="svg-features-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M55,0 L68,35 Q72,45 80,40 L100,30 100,0 Z" fill="#f2e6f8"/>
+			</svg>
+
+			
+	</section>
+
+
+	<section class="section" id="values">
+
+		<div class="section__content section__content--fix-width section__content--padding">
+						<h2 class="section__title section__title--centered">Our values</h2>
+			<div class="section__description section__description--centered">
+				Our values are the key differentiator with other companies. Here you can find some of of them  
+				<!-- #TODO: Values here -->
+			</div>
+
+			<div class="clear"></div>
 		</div>
-	</section> -->
 	
+</section>
+
+	<!-- Section -->
+	<section class="section" id="values">
+			<div class="section__content section__content--fluid-width">	
+				<div class="grid grid--2col grid--support">
+					<div class="grid__item grid__item--padding">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/support-64.png" alt="" title=""/></div>
+						<h3 class="grid__title">People first</h3>
+						<p class="grid__text">We focus on people skills. We are building our own coaching and mentoring platform to support ourselves. We will face challenges together and will help you to exploit your potential.</p>
+						<!-- <a href="#" class="grid__more">support@clvr.cloud</a> -->
+					</div>
+					<div class="grid__item grid__item--padding">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/globe-64.png" alt="" title=""/></div>
+						<h3 class="grid__title">Culture of collaboration</h3>
+						<p class="grid__text">Our culture is our key for success. We love to share our knowledge and ideas, allowing other team members to upskill and to learn from others.  <br /> We also love opensource technologies and we are actively working with the opensource community.</p>
+						<!-- <a href="#" class="grid__more">media@clvr.cloud</a> -->
+					</div>
+					<div class="grid__item grid__item--padding">
+						<div class="grid__icon"><img src="images/icons/icons-64-violet/wallet-64.png" alt="" title=""/></div>
+						<h3 class="grid__title">Mentoring</h3>
+						<p class="grid__text">
+								We aim to democratise the access to innovation tools by generating a community of engineers, students and hobbysts engaged with sustainable devops and responsive cloud computing.
+								<br />
+							<br/> 
+							<!-- <span>Interested?</span> Send us an email to:   -->
+						</p>
+						<!-- <a href="mailto:talent@clvr.cloud" class="grid__more">talent@clvr.cloud</a> -->
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		
+	</section>
+
+	
+	<!-- Section -- How it works -->
+	<!--
+	<section class="section section--hiw" id="hiw">
+
+			<div class="section__content section__content--fix-width section__content--padding">
+			        <h2 class="section__title section__title--centered">Easy to use API</h2>
+				<div class="section__description section__description--centered">
+				Guide to setup and configuration. You can present below a guide and a description of how your system configuration works and add some animated screens.
+				</div>
+					 <div class="hiw">
+							<div class="hiw-titles">
+								<div class="hiw-titles__wrapper swiper-wrapper">
+									<div class="hiw-titles__slide swiper-slide">
+									<span>Initializing JS</span>
+									</div>
+									<div class="hiw-titles__slide swiper-slide">
+									<span>Configuration CSS</span>
+									</div>
+									<div class="hiw-titles__slide swiper-slide">
+									<span>Security Levels API</span>
+									</div>
+									<div class="hiw-titles__slide swiper-slide">
+									<span>Add Instances</span>
+									</div>
+									<div class="hiw-titles__slide swiper-slide">
+									<span>General API Settings</span>
+									</div>
+								</div>	
+							</div>								   
+
+							<div class="hiw-content">
+								<div class="hiw-content__wrapper swiper-wrapper">
+									<div class="hiw-content__slide swiper-slide">
+											<pre>
+	<strong>$('.modal-toggle').on('click', function(e) {</strong>
+	  e.preventDefault();
+	  var modalopen = $(this).data("openpopup");
+	  $('.modal--'+modalopen).toggleClass('modal--visible');
+	  var modaltype = $(this).data("popup");
+	  $('.modal__content--'+modaltype).toggleClass('modal__content--visible');
+			$('.modal__switch').on('click', function(e) {
+			  $('.modal__content').removeClass('modal__content--visible');
+			  var modaltypeb = $(this).data("popup");
+			  $('.modal__content--'+modaltypeb).toggleClass('modal__content--visible');
+			});
+	});
+											</pre>										
+									 </div>
+									<div class="hiw-content__slide swiper-slide">
+											<pre>
+	<strong>.hiw-titles__slide{</strong>
+		 width: calc(100% / 5);
+		 cursor:pointer;
+		 padding:30px 0; 
+		 margin:0 0 -2px 0;
+		 text-align:center;
+		 opacity:.4;
+		 -webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		transition: all 1s;
+	}
+											</pre>		
+									</div>				
+									<div class="hiw-content__slide swiper-slide">
+											<pre>
+	<strong>$(".input__field").focus(function(){</strong>
+		$(this).parent().addClass('input--filled');
+	});
+
+	<strong>$('.input__field').blur(function()</strong>
+	{
+		if( !$(this).val() ) {
+			  $(this).parent().removeClass('input--filled');
+		}
+	});
+											</pre>			
+									 </div>
+									<div class="hiw-content__slide swiper-slide">
+											<pre>
+	<strong>$('.modal-toggle').on('click', function(e) {</strong>
+	  e.preventDefault();
+	  var modalopen = $(this).data("openpopup");
+	  $('.modal--'+modalopen).toggleClass('modal--visible');
+	  var modaltype = $(this).data("popup");
+	  $('.modal__content--'+modaltype).toggleClass('modal__content--visible');
+			$('.modal__switch').on('click', function(e) {
+			  $('.modal__content').removeClass('modal__content--visible');
+			  var modaltypeb = $(this).data("popup");
+			  $('.modal__content--'+modaltypeb).toggleClass('modal__content--visible');
+			});
+	});
+											</pre>				
+									</div>
+									<div class="hiw-content__slide swiper-slide">
+											<pre>
+	<strong>.hiw-titles__slide{</strong>
+		 width: calc(100% / 5);
+		 cursor:pointer;
+		 padding:30px 0; 
+		 margin:0 0 -2px 0;
+		 text-align:center;
+		 opacity:.4;
+		 -webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		transition: all 1s;
+	}
+											</pre>			
+									</div>
+								</div>
+							</div>
+							
+							<div class="hiw-buttons">
+								<button class="btn btn--blue-bg">GET THE CODE</button>
+								<button class="btn btn--red-bg">RUN EXAMPLE</button>
+							</div>
+			
+					</div>
+			</div>
+	</section>
+	
+-->
 
 	<!-- Section -- pricing -->
 	<!-- <section class="section" id="pricing">
+
 			<div class="section__content section__content--fix-width section__content--padding">
-				<h2 class="section__title section__title--centered">Flexible Pricing</h2>
+			        <h2 class="section__title section__title--centered">Our values</h2>
 				<div class="section__description section__description--centered">
 				We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business.
 				</div>
 				
-					
 					<div class="pricing">
 						<div class="pricing__switcher switcher">
 							<div class="switcher__buttons">
@@ -300,8 +340,8 @@
 						</div>
 
 					
-						<div class="pricing__plan">
-							<h3 class="pricing__title">FREE</h3>   
+						<div class="pricing__plan pricing__plan--popular">
+							<h3 class="pricing__title">People First</h3>   
 							<div class="pricing__values">
 								<div class="pricing__value pricing__value--show"><span>$</span>0 <b>/ month</b></div>
 								<div class="pricing__value pricing__value--hide pricing__value--hidden"><span>$</span>0 <b>/ yearly</b></div>
@@ -373,135 +413,155 @@
 						</div> 	
 					</div>
 				
-				<div class="clear"></div>
-			</div>
-		
-	</section> -->
+					<div class="clear"></div>
+				</div>
+			
+		</section> -->
+				
 	
 	<!-- Section -- testimonials -->
 	<!-- <section class="section section--testimonials" id="testimonials">
 
 			<div class="section__content section__content--fluid-width section__content--padding">
-			        <h2 class="section__title section__title--centered">Success stories</h2>
+			        <h2 class="section__title section__title--centered">Working with experts distributed around the globe</h2>
 					  <div class="testimonials">
-						<div class="testimonials__content swiper-wrapper">
-							  <div class="testimonials__slide swiper-slide">
-								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-1.jpg" alt="" title=""/></div>
-								<div class="testimonials__frame">
-									<div class="testimonials__source">Lason Duvan <a href="#">New York Business Center</a></div>
-									<div class="testimonials__text"><p>"Business is all about the customer: what the customer wants and what they get. "</p></div>
+	
+								<div class="testimonials__item">
+									<div class="testimonials__thumb"><img src="images/avatar-1.jpg" alt="" title=""/></div>
+									<div class="testimonials__content">
+										<div class="testimonials__source">Lason Duvan <a href="#">New York Business Center</a></div>
+										<div class="testimonials__text"><p>"Business is all about the customer: what the customer wants and what they get. "</p></div>
+									</div>
 								</div>
 								
-							  </div>
-							  <div class="testimonials__slide swiper-slide">
-								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-2.jpg" alt="" title=""/></div>
-								<div class="testimonials__frame">
-									<div class="testimonials__source">Jada Sacks <a href="#">Paris Tehnics</a></div>
-									<div class="testimonials__text"><p>" I've internalized it to the point of understanding that the success of my actions and/or endeavors"</p></div>
+								<div class="testimonials__item">
+									<div class="testimonials__thumb"><img src="images/avatar-2.jpg" alt="" title=""/></div>
+									<div class="testimonials__content">
+										<div class="testimonials__source">Jada Sacks <a href="#">Paris Tehnics</a></div>
+										<div class="testimonials__text"><p>" I've internalized it to the point of understanding that the success of my actions and/or endeavors"</p></div>
+									</div>
 								</div>
 								
-							  </div>
-							  <div class="testimonials__slide swiper-slide">
-								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-3.jpg" alt="" title=""/></div>
-								<div class="testimonials__frame">
-									<div class="testimonials__source">Lason Duvan <a href="#">Music Software</a></div>
-									<div class="testimonials__text"><p>"The American Dream is that any man or woman, despite of his or her background, can change their circumstances"</p></div>
+								<div class="testimonials__item testimonials__item--x2">
+									<div class="testimonials__thumb"><img src="images/avatar-3.jpg" alt="" title=""/></div>
+									<div class="testimonials__content">
+										<div class="testimonials__source">Lason Duvan <a href="#">Music Software</a></div>
+										<div class="testimonials__text"><p>"The American Dream is that any man or woman, despite of his or her background, can change their circumstances"</p></div>
+									</div>
 								</div>
 								
-							  </div>
-							  <div class="testimonials__slide swiper-slide">
-								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-4.jpg" alt="" title=""/></div>
-								<div class="testimonials__frame">
-									<div class="testimonials__source">Duran Jackson <a href="#">New York Business Center</a></div>
-									<div class="testimonials__text"><p>"Generally, every customer wants a product or service that solves their problem, worth their money"</p></div>
+								<div class="testimonials__item">
+									<div class="testimonials__thumb"><img src="images/avatar-4.jpg" alt="" title=""/></div>
+									<div class="testimonials__content">
+										<div class="testimonials__source">Duran Jackson <a href="#">New York Business Center</a></div>
+										<div class="testimonials__text"><p>"Generally, every customer wants a product or service that solves their problem, worth their money"</p></div>
+									</div>
 								</div>
 								
-							  </div>
-							  <div class="testimonials__slide swiper-slide">
-								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-5.jpg" alt="" title=""/></div>
-								<div class="testimonials__frame">
-									<div class="testimonials__source">Maria Allesi <a href="#">Italy Solutions</a></div>
-									<div class="testimonials__text"><p>"No one can make you successful; the will to success comes from within.' I've made this my motto."</p></div>
+								<div class="testimonials__item testimonials__item--x3">
+									<div class="testimonials__thumb"><img src="images/avatar-5.jpg" alt="" title=""/></div>
+									<div class="testimonials__content">
+										<div class="testimonials__source">Maria Allesi <a href="#">Italy Solutions</a></div>
+										<div class="testimonials__text"><p>"No one can make you successful; the will to success comes from within.' I've made this my motto."</p></div>
+									</div>
 								</div>
-							  </div>
-							  <div class="testimonials__slide swiper-slide">
-								<div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-6.jpg" alt="" title=""/></div>
-								<div class="testimonials__frame">
-									<div class="testimonials__source">Jenifer Patrison<a href="#">App Dating</a></div>
-									<div class="testimonials__text"><p>"Can change their circumstances and rise as high as they are willing to work"</p></div>
+								
+								<div class="testimonials__item">
+									<div class="testimonials__thumb"><img src="images/clients/viva-mexico.png" alt="" title=""/></div>
+									<div class="testimonials__content">
+										<div class="testimonials__source">Jenifer Patrison<a href="#">Viva Mexico</a></div>
+										<div class="testimonials__text"><p>"CLVR provided us a IoT solution for Stock Management that automated the entire ordering system"</p></div>
+									</div>
 								</div>
-							  </div>  
-						</div>
-						
-						<div class="testimonials__pagination swiper-pagination"></div>
-						        <div class="testimonials__button--next swiper-button-next"></div>
-							<div class="testimonials__button--prev swiper-button-prev"></div>
+								
+								<div class="testimonials__item testimonials__item--x4">
+									<div class="testimonials__thumb"><img src="images/avatar-6.jpg" alt="" title=""/></div>
+									<div class="testimonials__content">
+										<div class="testimonials__source">Jenifer Patrison<a href="#">App Dating</a></div>
+										<div class="testimonials__text"><p>"Can change their circumstances and rise as high as they are willing to work"</p></div>
+									</div>
+								</div>
+
 					</div>
 				<div class="clear"></div>
 			</div>
 		
-	</section>	 -->
+	</section> -->
 	
 	<!-- Section -->
-	<!-- <section class="section" id="faq">
+	<section class="section" id="faq">
 			<div class="section__content section__content--fluid-width section__content--padding">
 
 				<div class="grid grid--5col grid--faq">
 				
 					<div class="grid__item grid__item--x2">
 						<h3 class="grid__title">Frequently asked questions</h3>
-						<p class="grid__text">Have a presale question about our products and features? Or looking for a refund? We would love to hear what you concern is. </p>
-						<ul class="grid__list">
-							<li>Simple and Smart HTML code</li> 
-							<li>Works reintegrated in any part of the layout</li> 
-							<li>Reuse the elements from one design to another</li> 
-						</ul>
+						<p class="grid__text">Here you will find a list of our popular questions
+						</p>
+						<!-- <ul class="grid__list">
+							<li>Lorem ipsum dolor sit amet.</li> 
+							<li>consectetur adipiscing elit</li> 
+							<li>sed do eiusmod tempor incididunt ut</li> 
+						</ul> -->
 						
 					</div>
 					<div class="grid__item grid__item--x3">
 						<div class="faq">
 							<div class="faq__item">
 							  <input class="faq__input" id="faq1" type="radio" name="faq" checked>
-							  <label class="faq__label" for="faq1">Installing the app on all devices <span></span></label>
+							  <label class="faq__label" for="faq1">Why CLVR? <span></span></label>
 							  <div class="faq__content">
-								<p>Guide to setup and configuration. You can present below a guide and a description of how your system configuration works and add some animated screens. We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business. </p>
+								<p>We’re building out a world-class team of engineers to deliver Cloud Native applications.
+								</p>
 							  </div>
 							</div>
 							<div class="faq__item">
 							  <input class="faq__input" id="faq2" type="radio" name="faq">
-							  <label class="faq__label" for="faq2">How to implement and manage API key <span></span></label>
+							  <label class="faq__label" for="faq2">Where is CLVR based?<span></span></label>
 							  <div class="faq__content">
-								<p>We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business. Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service </p>
+								<p>Our Headquarters are based in <b>Wellington, New Zealand</b> and <b>Córdoba, Argentina</b></p>
 							  </div>
 							</div>
 							<div class="faq__item">
 							  <input class="faq__input" id="faq3" type="radio" name="faq">
-							  <label class="faq__label" for="faq3">How to set up and optimize your account <span></span></label>
+							  <label class="faq__label" for="faq3">Why Argentina?<span></span></label>
 							  <div class="faq__content">
-								<p>Landing page with features that will convince you to use it for your SaaS business. Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer serviceWe believe we have created the most efficient SaaS landing page for your users.  </p>
+								<p>
+									Having a dedicated team in Argentina is our strategy to provide additional services for our clients.
+									Argentina is 1st in technology skills based on the <a href="https://www.coursera.org/gsi"><b>Global skills Index 2019</b></a>.
+								</p>
 							  </div>
 							</div>
 							<div class="faq__item">
 							  <input class="faq__input" id="faq4" type="radio" name="faq">
-							  <label class="faq__label" for="faq4">Manage your account access and security settings <span></span></label>
+							  <label class="faq__label" for="faq4">What is DevOps? <span></span></label>
 							  <div class="faq__content">
-								<p>Guide to setup and configuration. You can present below a guide and a description of how your system configuration works and add some animated screens. We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business. </p>
+								<p>
+								</p>
 							  </div>
 							</div>
 							<div class="faq__item">
 							  <input class="faq__input" id="faq5" type="radio" name="faq">
-							  <label class="faq__label" for="faq5">API integration basic overview <span></span></label>
+							  <label class="faq__label" for="faq5">What is Site Reliability Engineering?<span></span></label>
 							  <div class="faq__content">
-								<p>We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business. Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service </p>
+								<p></p>
 							  </div>
 							</div>
 							<div class="faq__item">
 							  <input class="faq__input" id="faq6" type="radio" name="faq">
-							  <label class="faq__label" for="faq6">Deactivating or deleting your account <span></span></label>
+							  <label class="faq__label" for="faq6">What is Cloud Native? <span></span></label>
 							  <div class="faq__content">
-								<p>Landing page with features that will convince you to use it for your SaaS business. Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer serviceWe believe we have created the most efficient SaaS landing page for your users.  </p>
+								<p></p>
 							  </div>
 							</div>
+							<div class="faq__item">
+									<input class="faq__input" id="faq6" type="radio" name="faq">
+									<label class="faq__label" for="faq6">How can this help with my Software company? <span></span></label>
+									<div class="faq__content">
+									<p></p>
+									</div>
+								</div>
+							
 						</div>
 					</div>
 				</div>
@@ -510,57 +570,35 @@
 
 
 			</div>
-	</section> -->
-	
-	<!-- Section -->
-	<section class="section" id="support">
-			<div class="section__content section__content--fluid-width section__content--padding">	
-				<div class="grid grid--3col grid--support">
-				
-					<div class="grid__item grid__item--padding">
-						<div class="grid__icon"><img src="images/icons/icons-64-white/chat-bubbles-64.png" alt="" title=""/></div>
-						<h3 class="grid__title">Consultancy</h3>
-						<p class="grid__text">
-							We offer consultancy services to implement DevSecOps and Site Reliability Engineering 
-							using Cloud Native Strategies. We follow the CNCF Cloud Native Trail Map.
-						</p>
-						<!-- <a href="#" class="grid__more">support@supportemail.com</a> -->
-					</div>
-					<div class="grid__item grid__item--padding">
-						<div class="grid__icon"><img src="images/icons/icons-64-white/tabs-64.png" alt="" title=""/></div>
-						<h3 class="grid__title">Multi-Cloud strategies</h3>
-						<p class="grid__text">
-							We work with the major cloud providers and your own datacenter. This allows 
-							you to run your applications and workload on any environment: cloud or on premises, 
-							increasing flexibility and avoiding vendor lock in.
-						</p>
-						<!-- <a href="#" class="grid__more">media@youremail.com</a> -->
-					</div>
-					<div class="grid__item grid__item--padding">
-						<div class="grid__icon"><img src="images/icons/icons-64-white/research-64.png" alt="" title=""/></div>
-						<h3 class="grid__title">Operations and Maintenance</h3>
-						<p class="grid__text">
-							We provide operations support and maintance of your environments and applications.
-							Our stack is based on open-source technologies, such as Prometheus and Alert manager.
-						</p>
-						<!-- <a href="#" class="grid__more">sales@salesemail.com</a> -->
-					</div>
-					<!-- <div class="grid__item grid__item--padding">
-						<div class="grid__icon"><img src="images/icons/icons-64-white/research-64.png" alt="" title="" /></div>
-						<h3 class="grid__title">Trainings and Events</h3>
-						<p class="grid__text">
-						We want to democratise the access to innovation tools by generating a community of 
-						engineers, students and hobbysts. Subscribe here to learn more about our events.
-						</p>
-						<a href="#" class="grid__more">sales@salesemail.com</a>
-					</div> -->
-				</div>
-				<div class="clear"></div>
-			</div>
-		
 	</section>
 	
 
+	
+	<!-- Section -->
+	<section class="section section--clients" id="clients">
+			<div class="section__content section__content--fluid-width section__content--padding">				
+				<div class="grid grid--5col">
+				
+					<div class="grid__item">
+						<div class="grid__client-logo"><a href="#"><img src="images/clients/aws.png" alt="" title=""/></a></div>
+					</div>
+					<div class="grid__item">
+						<div class="grid__client-logo"><a href="#"><img src="images/clients/google.png" alt="" title=""/></a></div>
+					</div>
+					<div class="grid__item">
+						<div class="grid__client-logo"><a href="#"><img src="images/clients/catalyst.png" alt="" title=""/></a></div>
+					</div>
+					<div class="grid__item">
+						<div class="grid__client-logo"><a href="#"><img src="images/clients/k8s.png" alt="" title=""/></a></div>
+					</div>
+					<div class="grid__item">
+						<div class="grid__client-logo"><a href="#"><img src="images/clients/docker.png" alt="" title=""/></a></div>
+					</div>	
+				</div>
+
+			</div>
+
+	</section>
 	
 	<!-- Section -->
 	<section class="section section--cta" id="cta">
@@ -568,18 +606,18 @@
 				<div class="grid grid--2col grid--cta">
 					<div class="grid__item">
 						
-						<h3 class="grid__title grid__title--cta">Start <span>growing</span> your bussiness.</h3>
-						<p class="grid__text">Your issue is our main priority. Our 24/7 support team is here to help you and make sure our product is up to date. Have a presale question about our products and features? Or looking for a refund? We would love to hear what you concern is. Online awards and publications. </p>
+						<h3 class="grid__title grid__title--cta">Are you <span>interested?</span></h3>
+						<p class="grid__text">
+							We are always searching for pasionated and talented people to join our team.</p>
 					</div>
 					<div class="grid__item grid__item--centering">
-						<a href="#" class="grid__more">GET STARTED NOW!</a>
+						<a href="mailto:talent@clvr.cloud" class="grid__more">Join our team! </a>
 					</div>
 				</div>
 				<div class="clear"></div>
 			</div>
 			<svg class="svg-cta-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-			<defs> <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad"> <stop offset="0%" stop-color="#030c2c"/> <stop offset="100%" stop-color="#182964"/> </linearGradient> </defs>
-				<path d="M0,80 L10,90 Q21,101 30,90 L100,0 100,100 0,100 Z" fill="url(#linear)"/>
+				<path d="M0,80 L10,90 Q21,101 30,90 L100,0 100,100 0,100 Z" fill="#f2e6f8"/>
 			</svg>
 	</section>
 
@@ -591,50 +629,44 @@
 				
 					<div class="grid__item grid__item--x2">
 						<h3 class="grid__title grid__title--footer-logo">CLVR</h3>
-						<p class="grid__text grid__text--copyright">Copyright &copy; 2019 CLVR.  <br />All Rights Reserved.</p>
-						<ul class="grid__list grid__list--sicons">
-								<li><a href="#"><img src="images/social/white/twitter.png" alt="" title=""/></a></li>
-								<li><a href="#"><img src="images/social/white/facebook.png" alt="" title=""/></a></li>
-								<li><a href="#"><img src="images/social/white/linkedin.png" alt="" title=""/></a></li>
-						</ul>
+						<p class="grid__text grid__text--copyright">Copyright &copy; 2019 CLVR Cloud Ltd.  <br />All Rights Reserved.
+						</p>
+						<!-- <ul class="grid__list grid__list--sicons">
+								<li><a href="#"><img src="images/social/black/twitter.png" alt="" title=""/></a></li>
+								<li><a href="https://www.linkedin.com/company/clvr-cloud"><img src="images/social/black/linkedin.png" alt="" title=""/></a></li>
+						</ul> -->
 					</div>
 					<div class="grid__item">
-						<h3 class="grid__title grid__title--footer">Company</h3>
+						<h3 class="grid__title grid__title--footer">About Us</h3>
 						<ul class="grid__list grid__list--fmenu">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Carrers</a></li>
-								<li><a href="#">Awards</a></li>
-								<li><a href="#">Users Program</a></li>
-								<li><a href="#">Locations</a></li>
+								<li><a href="#features">What do we do?</a></li>
+								<li><a href="#values">Our values</a></li>
+								<li><a href="#cta">Join us</a></li>
+								<!-- <li><a href="#">Awards</a></li> -->
+								<!-- <li><a href="#">Users Program</a></li> -->
+								<!-- <li><a href="#">Locations</a></li> -->
 						</ul>
 					</div>
 					<div class="grid__item">
-						<h3 class="grid__title grid__title--footer">Products</h3>
+						<h3 class="grid__title grid__title--footer">Services</h3>
 						<ul class="grid__list grid__list--fmenu">
 	
-								<li><a href="#">Integrations</a></li>
-								<li><a href="#">API</a></li>
-								<li><a href="#">Pricing</a></li>
-								<li><a href="#">Documentation</a></li>
-								<li><a href="#">Release Notes</a></li>
+								<li><a href="#features">Cloud Migrations</a></li>
+								<li><a href="#features">Site Reliability Engineering</a></li>
+								<li><a href="#features">DevSecOps</a></li>
+								<li><a href="#features">Cloud Strategy</a></li>
+								<li><a href="#features">CI/CD Pipelines</a></li>
 						</ul>
 					</div>
 					<div class="grid__item">
 						<h3 class="grid__title grid__title--footer">Support</h3>
 						<ul class="grid__list grid__list--fmenu">
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Press</a></li>
-								
+								<li><a href="mailto:contact@clvr.cloud">Contact</a></li>
+								<li><a href="#faq">FAQ</a></li>								
 						</ul>
 					</div>
-					
 				</div>
-				
-				
 			</div>
-
-
 	</footer>
 	
 
@@ -741,10 +773,10 @@
 			<div class="modal__wrapper modal__wrapper--image modal-transition">
 				<div class="modal__body">
 					<button class="modal__close modal__overlay--toggle"><span></span></button>
-					<div class="modal__header">How it works animation</div>
+					<div class="modal__header">Demo</div>
 					
 					<div class="modal__image">
-						<img src="images/intro-animation.gif" alt="" title=""/>
+						<img src="images/intro-animation.gif" alt="" title="" width="700px"/>
 					</div>
 				</div>
 			</div>
@@ -753,6 +785,12 @@
 <script src="js/jquery.custom.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/swiper.custom.js"></script>
+<script src="js/animation.js"></script>
 <script src="js/menu.js"></script>
 </body>
+
+<!-- Chatbot -->
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="bc909cae-2195-4f73-9fad-cf319aac0a3e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </html>
+
+
